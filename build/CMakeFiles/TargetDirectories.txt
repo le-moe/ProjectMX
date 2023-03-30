@@ -1,3 +1,0 @@
-/mnt/bind-root/build/CMakeFiles/rebuild_cache.dir
-/mnt/bind-root/build/CMakeFiles/edit_cache.dir
-/mnt/bind-root/build/CMakeFiles/ProjectMX.dir
