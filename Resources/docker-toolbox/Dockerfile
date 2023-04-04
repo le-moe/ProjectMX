@@ -35,7 +35,8 @@ WORKDIR $WORKDIR
 
 # Install ST-link and fix library not found by ldd
 RUN cd /; git clone https://github.com/stlink-org/stlink.git \
-&& cd stlink && cmake . && make \
+&& cd stlink && cmake . && make && make install \
+&& rm -rf /usr/local/bin/st* \
 && ln -s /stlink/bin/st-flash /usr/local/bin/ \
 && ln -s /stlink/bin/st-info  /usr/local/bin/ \
 && ln -s /stlink/bin/st-trace /usr/local/bin/ \
